@@ -17,21 +17,15 @@ class TestAddGroup(unittest.TestCase):
 
     def test_add_group(self):
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
-        self.open_groups_page(wd)
         self.create_group(wd, Group(name_group="new_group_3", logo_group="New_logo_3", footer_group="Footer_3"))
-        self.return_to_groups_page(wd)
         self.logout(wd)
 
-# added second test with empty value
+    # added second test with empty value
     def test_add_empty_group(self):
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
-        self.open_groups_page(wd)
         self.create_group(wd, Group(name_group="", logo_group="", footer_group=""))
-        self.return_to_groups_page(wd)
         self.logout(wd)
 
     def logout(self, wd):
@@ -44,6 +38,7 @@ class TestAddGroup(unittest.TestCase):
 
     def create_group(self, wd, group):
         # init group creation
+        self.open_groups_page(wd)  # перенесено из основного теста
         wd.find_element_by_xpath("(//input[@name='new'])[2]").click()
         # fill group form
         wd.find_element_by_name("group_name").click()
@@ -57,6 +52,7 @@ class TestAddGroup(unittest.TestCase):
         wd.find_element_by_name("group_footer").send_keys(group.footer_group)
         # submit group creation
         wd.find_element_by_name("submit").click()
+        self.return_to_groups_page(wd)  # перенесено из основного теста
 
     def open_groups_page(self, wd):
         # open groups page
@@ -64,6 +60,7 @@ class TestAddGroup(unittest.TestCase):
 
     def login(self, wd, username, password):
         # login
+        self.open_home_page(wd)  # перенесено из теста test_add_empty_group
         wd.find_element_by_id("LoginForm").click()
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
