@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="Добавлен тест на добавление контактов">
-      <change afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
+    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="Тест изменен с unittest на pytest.&#10;Добавлен класс Application в отдельном файле application куда вынесены все методы login, create, запуск вебдрайвера.&#10;Изменена фикстура инициализация запуска через фреймвор pytest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Add_Group.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Add_Group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_add_contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_add_contacts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +50,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/env" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.pytest for Test_Add_Group.TestAddGroup">
+  <component name="RunManager" selected="Python tests.pytest in Test_add_contacts.py">
     <configuration name="Unittests in Test_Add_Group.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,9 +99,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in Test_add_contacts.py" />
         <item itemvalue="Python tests.pytest for Test_Add_Group.TestAddGroup" />
         <item itemvalue="Python tests.Unittests in Test_Add_Group.py" />
-        <item itemvalue="Python tests.pytest in Test_add_contacts.py" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594675872384</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Тест изменен с unittest на pytest.&#10;Добавлен класс Application в отдельном файле application куда вынесены все методы login, create, запуск вебдрайвера.&#10;Изменена фикстура инициализация запуска через фреймвор pytest">
+      <created>1595164939263</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1595164939263</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,7 +186,8 @@
     <MESSAGE value="Передача парметров в методы.&#10;Добавлен второй тест с пустыми значениями для ввода." />
     <MESSAGE value="Выделены вспомогательные методы и классы. GRoup" />
     <MESSAGE value="Добавлен тест на добавление контактов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен тест на добавление контактов" />
+    <MESSAGE value="Тест изменен с unittest на pytest.&#10;Добавлен класс Application в отдельном файле application куда вынесены все методы login, create, запуск вебдрайвера.&#10;Изменена фикстура инициализация запуска через фреймвор pytest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Тест изменен с unittest на pytest.&#10;Добавлен класс Application в отдельном файле application куда вынесены все методы login, create, запуск вебдрайвера.&#10;Изменена фикстура инициализация запуска через фреймвор pytest" />
   </component>
   <component name="WindowStateProjectService">
     <state x="664" y="118" key="#Unittests_in_Test_Add_Group.py" timestamp="1595164402081">
@@ -194,28 +202,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="333" y="326" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594663469331" />
-    <state width="1899" height="323" key="GridCell.Tab.0.bottom" timestamp="1595164696553">
+    <state width="1899" height="45" key="GridCell.Tab.0.bottom" timestamp="1595169566727">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595164696553" />
+    <state width="1899" height="45" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595169566727" />
     <state width="2539" height="173" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768910" />
     <state width="1899" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594665329227" />
-    <state width="1899" height="323" key="GridCell.Tab.0.center" timestamp="1595164696553">
+    <state width="1899" height="45" key="GridCell.Tab.0.center" timestamp="1595169566727">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="323" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595164696553" />
+    <state width="1899" height="45" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595169566727" />
     <state width="2539" height="173" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768909" />
     <state width="1899" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594665329227" />
-    <state width="1899" height="323" key="GridCell.Tab.0.left" timestamp="1595164696553">
+    <state width="1899" height="45" key="GridCell.Tab.0.left" timestamp="1595169566727">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="323" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595164696553" />
+    <state width="1899" height="45" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595169566727" />
     <state width="2539" height="173" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768909" />
     <state width="1899" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594665329227" />
-    <state width="1899" height="323" key="GridCell.Tab.0.right" timestamp="1595164696553">
+    <state width="1899" height="45" key="GridCell.Tab.0.right" timestamp="1595169566727">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="323" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595164696553" />
+    <state width="1899" height="45" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595169566727" />
     <state width="2539" height="173" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768909" />
     <state width="1899" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594665329227" />
     <state width="1899" height="340" key="GridCell.Tab.1.bottom" timestamp="1595162282350">
@@ -239,12 +247,16 @@
     </state>
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595164336096" />
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594664849074" />
-    <state x="2656" y="335" key="Vcs.Push.Dialog.v2" timestamp="1594675881483">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1595164955963">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1594672141519" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595164955963" />
     <state x="2656" y="335" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675881483" />
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594664442087" />
+    <state x="2144" y="0" width="1607" height="992" maximized="true" key="dock-window-1" timestamp="1595168692599">
+      <screen x="1920" y="0" width="2560" height="1400" />
+    </state>
+    <state x="2144" y="0" width="1607" height="992" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595168692599" />
     <state x="671" y="293" key="git4idea.merge.GitPullDialog" timestamp="1594676352268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
