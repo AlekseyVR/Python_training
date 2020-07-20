@@ -19,14 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="Созданы пакеты для разных зон ответственности">
-      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="Выделили вспомогательный класс SessionHelper в session.py">
+      <change afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Test_Add_Group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test_Add_Group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Test_add_contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test_add_contacts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test_Add_Group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test_Add_Group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test_add_contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test_add_contacts.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,7 @@
       <recent name="E:\python\Python_training\models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test.Test_Add_Group">
+  <component name="RunManager" selected="Python tests.pytest in Test_add_contacts.py">
     <configuration name="Unittests in Test_Add_Group.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -130,9 +129,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in Test_add_contacts.py" />
         <item itemvalue="Python tests.pytest for test.Test_Add_Group" />
         <item itemvalue="Python tests.Unittests in Test_Add_Group.py" />
-        <item itemvalue="Python tests.pytest in Test_add_contacts.py" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595253340651</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Выделили вспомогательный класс SessionHelper в session.py">
+      <created>1595256781719</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1595256781719</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,7 +240,8 @@
     <MESSAGE value="Тест изменен с unittest на pytest.&#10;Добавлен класс Application в отдельном файле application куда вынесены все методы login, create, запуск вебдрайвера.&#10;Изменена фикстура инициализация запуска через фреймвор pytest" />
     <MESSAGE value="Переведены тесты: test_add_group &amp; test_add_contacts с unittest на py.test и реализована фикстура.&#10;Изменен application.py класссодержит общие, а так же частные методы для добавления групп и контактов." />
     <MESSAGE value="Созданы пакеты для разных зон ответственности" />
-    <option name="LAST_COMMIT_MESSAGE" value="Созданы пакеты для разных зон ответственности" />
+    <MESSAGE value="Выделили вспомогательный класс SessionHelper в session.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выделили вспомогательный класс SessionHelper в session.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="664" y="118" key="#Unittests_in_Test_Add_Group.py" timestamp="1595164402081">
@@ -253,28 +260,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="333" y="326" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594663469331" />
-    <state width="1899" height="232" key="GridCell.Tab.0.bottom" timestamp="1595255356928">
+    <state width="1899" height="232" key="GridCell.Tab.0.bottom" timestamp="1595257713854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="232" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595255356928" />
+    <state width="1899" height="232" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595257713854" />
     <state width="2539" height="173" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768910" />
     <state width="1899" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594665329227" />
-    <state width="1899" height="232" key="GridCell.Tab.0.center" timestamp="1595255356928">
+    <state width="1899" height="232" key="GridCell.Tab.0.center" timestamp="1595257713854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="232" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595255356928" />
+    <state width="1899" height="232" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595257713854" />
     <state width="2539" height="173" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768909" />
     <state width="1899" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594665329227" />
-    <state width="1899" height="232" key="GridCell.Tab.0.left" timestamp="1595255356927">
+    <state width="1899" height="232" key="GridCell.Tab.0.left" timestamp="1595257713853">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="232" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595255356927" />
+    <state width="1899" height="232" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595257713853" />
     <state width="2539" height="173" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768909" />
     <state width="1899" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594665329227" />
-    <state width="1899" height="232" key="GridCell.Tab.0.right" timestamp="1595255356928">
+    <state width="1899" height="232" key="GridCell.Tab.0.right" timestamp="1595257713854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="232" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595255356928" />
+    <state width="1899" height="232" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595257713854" />
     <state width="2539" height="173" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768909" />
     <state width="1899" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594665329227" />
     <state width="1899" height="340" key="GridCell.Tab.1.bottom" timestamp="1595162282350">
@@ -298,10 +305,10 @@
     </state>
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595254393781" />
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594664849074" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1595253355709">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1595256787723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595253355709" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595256787723" />
     <state x="2656" y="335" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675881483" />
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594664442087" />
     <state x="2144" y="0" width="1607" height="992" maximized="true" key="dock-window-1" timestamp="1595168692599">
