@@ -10,7 +10,7 @@ class GroupHelper:
     def create(self, group):
         wd = self.app.wd
         # init group creation
-        self.open_groups_page()  # перенесено из основного теста
+        self.open_groups_page()
         wd.find_element_by_xpath("(//input[@name='new'])[2]").click()
         # fill group form
         wd.find_element_by_name("group_name").click()
@@ -24,9 +24,18 @@ class GroupHelper:
         wd.find_element_by_name("group_footer").send_keys(group.footer_group)
         # submit group creation
         wd.find_element_by_name("submit").click()
-        self.return_to_groups_page()  # перенесено из основного теста
+        self.return_to_groups_page()
 
     def return_to_groups_page(self):
         wd = self.app.wd
         # return to groups page
         wd.find_element_by_link_text("group page").click()
+
+    def delete_first_group(self):
+        wd = self.app.wd
+        self.open_groups_page()
+        # submit first group
+        wd.find_element_by_name("selected[]").click()
+        # submit deletion first group
+        wd.find_element_by_name("delete").click()
+        self.return_to_groups_page()
