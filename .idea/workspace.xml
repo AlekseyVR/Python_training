@@ -19,13 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="ВЫделен классы для работы с группами и контактами">
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_del_group.py" afterDir="false" />
+    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="Выделена общая фикстура для всех тестов в conftest.py&#10;Добавлены интервалы, т.к. без них не проходил logout и каждый следующий тест падал.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Test_Add_Group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test_Add_Group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Test_add_contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test_add_contacts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595257772503</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Выделена общая фикстура для всех тестов в conftest.py&#10;Добавлены интервалы, т.к. без них не проходил logout и каждый следующий тест падал.">
+      <created>1595321303570</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1595321303570</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,7 +292,8 @@
     <MESSAGE value="Созданы пакеты для разных зон ответственности" />
     <MESSAGE value="Выделили вспомогательный класс SessionHelper в session.py" />
     <MESSAGE value="ВЫделен классы для работы с группами и контактами" />
-    <option name="LAST_COMMIT_MESSAGE" value="ВЫделен классы для работы с группами и контактами" />
+    <MESSAGE value="Выделена общая фикстура для всех тестов в conftest.py&#10;Добавлены интервалы, т.к. без них не проходил logout и каждый следующий тест падал." />
+    <option name="LAST_COMMIT_MESSAGE" value="Выделена общая фикстура для всех тестов в conftest.py&#10;Добавлены интервалы, т.к. без них не проходил logout и каждый следующий тест падал." />
   </component>
   <component name="WindowStateProjectService">
     <state x="664" y="118" key="#Unittests_in_Test_Add_Group.py" timestamp="1595164402081">
@@ -305,30 +312,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="333" y="326" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594663469331" />
-    <state width="1899" height="397" key="GridCell.Tab.0.bottom" timestamp="1595321014271">
+    <state width="1899" height="233" key="GridCell.Tab.0.bottom" timestamp="1595322736018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="232" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595257713854" />
     <state width="2539" height="173" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768910" />
-    <state width="1899" height="397" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595321014271" />
-    <state width="1899" height="397" key="GridCell.Tab.0.center" timestamp="1595321014271">
+    <state width="1899" height="233" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595322736018" />
+    <state width="1899" height="233" key="GridCell.Tab.0.center" timestamp="1595322736018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="232" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595257713854" />
     <state width="2539" height="173" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768909" />
-    <state width="1899" height="397" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595321014271" />
-    <state width="1899" height="397" key="GridCell.Tab.0.left" timestamp="1595321014271">
+    <state width="1899" height="233" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595322736018" />
+    <state width="1899" height="233" key="GridCell.Tab.0.left" timestamp="1595322736018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="232" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595257713853" />
     <state width="2539" height="173" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768909" />
-    <state width="1899" height="397" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595321014271" />
-    <state width="1899" height="397" key="GridCell.Tab.0.right" timestamp="1595321014271">
+    <state width="1899" height="233" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595322736018" />
+    <state width="1899" height="233" key="GridCell.Tab.0.right" timestamp="1595322736018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="232" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595257713854" />
     <state width="2539" height="173" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768909" />
-    <state width="1899" height="397" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595321014271" />
+    <state width="1899" height="233" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595322736018" />
     <state width="1899" height="340" key="GridCell.Tab.1.bottom" timestamp="1595162282350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -350,12 +357,12 @@
     </state>
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595254393781" />
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594664849074" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1595257784344">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1595321313540">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595257784344" />
     <state x="2656" y="335" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675881483" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594664442087" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595321313540" />
     <state x="2144" y="0" width="1607" height="992" maximized="true" key="dock-window-1" timestamp="1595168692599">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
