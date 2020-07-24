@@ -1,4 +1,3 @@
-import time
 
 
 class SessionHelper:
@@ -8,7 +7,7 @@ class SessionHelper:
     def login(self, username, password):
         wd = self.app.wd
         # login
-        self.app.open_home_page()  # перенесено из теста test_add_empty_group
+        self.app.open_home_page()
         wd.find_element_by_id("LoginForm").click()
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
@@ -24,4 +23,4 @@ class SessionHelper:
         # logout
         wd = self.app.wd
         wd.find_element_by_link_text("Logout").click()
-        time.sleep(2)
+        wd.find_element_by_name("user")

@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="Добавлен test_edit_group.py работает отдельно и вместе со всеми">
-      <change afterPath="$PROJECT_DIR$/test/test_edit_contact.py" afterDir="false" />
+    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="Добавлен test_edit_contact.py работает отдельно и вместе со всеми">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595336500656</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Добавлен test_edit_contact.py работает отдельно и вместе со всеми">
+      <created>1595339192803</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1595339192803</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -317,7 +323,8 @@
     <MESSAGE value="Интервалы добавлены из тестов в SessionHelper" />
     <MESSAGE value="Добавлен test_del_contact.py" />
     <MESSAGE value="Добавлен test_edit_group.py работает отдельно и вместе со всеми" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен test_edit_group.py работает отдельно и вместе со всеми" />
+    <MESSAGE value="Добавлен test_edit_contact.py работает отдельно и вместе со всеми" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен test_edit_contact.py работает отдельно и вместе со всеми" />
   </component>
   <component name="WindowStateProjectService">
     <state x="664" y="118" key="#Unittests_in_Test_Add_Group.py" timestamp="1595164402081">
@@ -336,30 +343,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="333" y="326" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594663469331" />
-    <state width="1899" height="233" key="GridCell.Tab.0.bottom" timestamp="1595338959545">
+    <state width="1899" height="233" key="GridCell.Tab.0.bottom" timestamp="1595400945169">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="232" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595257713854" />
     <state width="2539" height="173" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768910" />
-    <state width="1899" height="233" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595338959545" />
-    <state width="1899" height="233" key="GridCell.Tab.0.center" timestamp="1595338959545">
+    <state width="1899" height="233" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595400945169" />
+    <state width="1899" height="233" key="GridCell.Tab.0.center" timestamp="1595400945168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="232" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595257713854" />
     <state width="2539" height="173" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768909" />
-    <state width="1899" height="233" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595338959545" />
-    <state width="1899" height="233" key="GridCell.Tab.0.left" timestamp="1595338959545">
+    <state width="1899" height="233" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595400945168" />
+    <state width="1899" height="233" key="GridCell.Tab.0.left" timestamp="1595400945168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="232" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595257713853" />
     <state width="2539" height="173" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768909" />
-    <state width="1899" height="233" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595338959545" />
-    <state width="1899" height="233" key="GridCell.Tab.0.right" timestamp="1595338959545">
+    <state width="1899" height="233" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595400945168" />
+    <state width="1899" height="233" key="GridCell.Tab.0.right" timestamp="1595400945168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="232" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595257713854" />
     <state width="2539" height="173" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675768909" />
-    <state width="1899" height="233" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595338959545" />
+    <state width="1899" height="233" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595400945168" />
     <state width="1899" height="340" key="GridCell.Tab.1.bottom" timestamp="1595162282350">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -381,12 +388,12 @@
     </state>
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595254393781" />
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594664849074" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1595336538432">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1595339203514">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595257784344" />
     <state x="2656" y="335" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594675881483" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595336538432" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595339203514" />
     <state x="2144" y="0" width="1607" height="992" maximized="true" key="dock-window-1" timestamp="1595168692599">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
