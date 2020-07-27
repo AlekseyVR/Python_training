@@ -3,16 +3,18 @@ from models.contact import Contact
 
 def test_add_contacts(app):
     app.session.login(username="admin", password="secret")
-    app.contact.edit_contact(Contact(first_name_contact="edited", middle_name_contact="edited",
-                                     last_name_contact="edited", nickname_contact="edited",
-                                     title_contact="edited", company_contact="edited",
-                                     address_contact="edited", home_contact="edited",
-                                     mobile_contact="edited",
-                                     work_contact="edited", fax_contact="edited",
-                                     e_mail_contact="edited", e_mail_2_contact="edited",
-                                     e_mail_3_contact="edited",
-                                     homepage_contact="edited", birthday="1", birthdmonth="January",
-                                     bYear="1993", aDay="2", aMonth="December", aYear="1996",
-                                     secondary_address="edited",
-                                     secondary_home="edited", notes_contact="edited"))
+    app.contact.edit_contact()
+    app.contact.data_contact(Contact(first_name_contact="edit", middle_name_contact="edit",
+                                     last_name_contact="edit", nickname_contact="edit",
+                                     title_contact="edit", company_contact="edit",
+                                     address_contact="edit", home_contact="edit",
+                                     mobile_contact="edit",
+                                     work_contact="edit", fax_contact="edit",
+                                     e_mail_contact="E-edit", e_mail_2_contact="E-edit",
+                                     e_mail_3_contact="E-edit",
+                                     homepage_contact="edit", birthday="2", birthdmonth="January",
+                                     bYear="1994", aDay="20", aMonth="December", aYear="1995",
+                                     secondary_address="edit",
+                                     secondary_home="edit", notes_contact="edit"))
+    app.contact.confirm_edit()
     app.session.logout()
