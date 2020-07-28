@@ -1,9 +1,13 @@
 from models.group import Group
 
 
-def test_add_group(app):
+def test_edit_group_name(app):
     app.session.login(username="admin", password="secret")
-    app.group.edit_first_group()
-    app.group.data_group(Group(name_group="edit_data", logo_group="edit_data", footer_group="edit_data"))
-    app.group.confirm_edit()
+    app.group.edit_first_group(Group(name_group="New group"))
+    app.session.logout()
+
+
+def test_edit_group_logo(app):
+    app.session.login(username="admin", password="secret")
+    app.group.edit_first_group(Group(logo_group="New logo"))
     app.session.logout()
