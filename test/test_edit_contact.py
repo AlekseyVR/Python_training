@@ -1,8 +1,7 @@
 from models.contact import Contact
 
 
-def test_add_contacts(app):
-    app.session.login(username="admin", password="secret")
+def test_edit_contacts(app):
     app.contact.edit_contact()
     app.contact.data_contact(Contact(first_name_contact="edit", middle_name_contact="edit",
                                      last_name_contact="edit", nickname_contact="edit",
@@ -17,4 +16,3 @@ def test_add_contacts(app):
                                      secondary_address="edit",
                                      secondary_home="edit", notes_contact="edit"))
     app.contact.confirm_edit()
-    app.session.logout()

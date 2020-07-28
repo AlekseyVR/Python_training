@@ -4,7 +4,6 @@ from models.contact import Contact
 
 
 def test_add_contacts(app):
-    app.session.login(username="admin", password="secret")
     app.contact.create()
     app.contact.data_contact(Contact(first_name_contact="first_name_contact", middle_name_contact="middle_name_contact",
                                      last_name_contact="last_name_contact", nickname_contact="nickname_contact",
@@ -19,4 +18,3 @@ def test_add_contacts(app):
                                      secondary_address="secondary_address_contact",
                                      secondary_home="secondary_home_contact", notes_contact="Notes_contact"))
     app.contact.confirm_create()
-    app.session.logout()
