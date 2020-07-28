@@ -5,11 +5,14 @@ class ContactHelper:
     def __init__(self, app):
         self.app = app
 
-    def create(self):
+    def create(self, contact):
         # create_contact
         wd = self.app.wd
-        wd.find_element_by_link_text('home').click()
+        self.return_nav_home()
         wd.find_element_by_link_text("add new").click()
+        self.data_contact(contact)
+        self.confirm_create()
+        self.return_nav_home()
 
     def confirm_create(self):
         wd = self.app.wd
@@ -91,25 +94,27 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("home page").click()
 
-    def edit_contact(self):
-        # edit_contact
+    def return_nav_home(self):
         wd = self.app.wd
         wd.find_element_by_link_text('home').click()
+
+    def edit_contact(self, new_contact_data):
+        # edit_contact
+        wd = self.app.wd
+        self.return_nav_home()
         wd.find_element_by_xpath("//img[@title='Edit']").click()
+        self.data_contact(new_contact_data)
+        self.confirm_edit()
 
     def confirm_edit(self):
         wd = self.app.wd
         # confirm editing contact
         wd.find_element_by_name("update").click()
-        self.return_home_page()
-
-    def return_nav_home(self):
-        wd = self.app.wd
-        wd.find_element_by_link_text('home').click()
+        wd.find_element_by_link_text("home page").click()
 
     def delete_first_contact(self):
         wd = self.app.wd
-        wd.find_element_by_link_text('home').click()
+        self.return_nav_home()
         # submit first contact
         wd.find_element_by_name("selected[]").click()
         # submit deletion
@@ -117,3 +122,9 @@ class ContactHelper:
         # submit alert
         wd.switch_to_alert().accept()
         self.return_nav_home()
+
+    def count(self):
+        wd = self.app.wd
+        self.return_nav_home()
+        # search all checkboxes on page
+        return len(wd.find_elements_by_name("selected[]"))
