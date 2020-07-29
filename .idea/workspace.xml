@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="В тесты добавлены проверки на наличие хотя бы одного элемента группы и контакты">
+    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="В тесты добавлены проверки на наличие хотя бы одного элемента группы и контакты.&#10;изменена фикстура контактов, можно модифицировать по одному полю">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,7 @@
       <recent name="E:\python\Python_training\models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test">
+  <component name="RunManager" selected="Python tests.pytest in test_del_contact.py">
     <configuration default="true" type="tests" factoryName="Unittests" activateToolWindowBeforeRun="false">
       <module name="Python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -164,8 +163,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test" />
         <item itemvalue="Python tests.pytest in test_del_contact.py" />
+        <item itemvalue="Python tests.pytest in test" />
         <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in Test_add_contacts.py" />
         <item itemvalue="Python tests.pytest in test_edit_group.py" />
@@ -330,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595971789894</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="В тесты добавлены проверки на наличие хотя бы одного элемента группы и контакты.&#10;изменена фикстура контактов, можно модифицировать по одному полю">
+      <created>1595974315891</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1595974315891</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -366,7 +372,8 @@
     <MESSAGE value="Оптимизация ввода данных в формы&#10;if then else для модификации групп" />
     <MESSAGE value="Валидация фикстуры, проверка текущего состояния сессии в SessionHelper.&#10;Подправлены тесты контактов, добавлен клик на главную в контакты." />
     <MESSAGE value="В тесты добавлены проверки на наличие хотя бы одного элемента группы и контакты" />
-    <option name="LAST_COMMIT_MESSAGE" value="В тесты добавлены проверки на наличие хотя бы одного элемента группы и контакты" />
+    <MESSAGE value="В тесты добавлены проверки на наличие хотя бы одного элемента группы и контакты.&#10;изменена фикстура контактов, можно модифицировать по одному полю" />
+    <option name="LAST_COMMIT_MESSAGE" value="В тесты добавлены проверки на наличие хотя бы одного элемента группы и контакты.&#10;изменена фикстура контактов, можно модифицировать по одному полю" />
   </component>
   <component name="WindowStateProjectService">
     <state x="664" y="118" key="#Unittests_in_Test_Add_Group.py" timestamp="1595164402081">
@@ -389,28 +396,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="333" y="326" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594663469331" />
-    <state width="2539" height="368" key="GridCell.Tab.0.bottom" timestamp="1595974210422">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="1899" height="368" key="GridCell.Tab.0.bottom" timestamp="1596036263216">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1001" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595962779162" />
+    <state width="1899" height="368" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596036263216" />
     <state width="2539" height="368" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1595974210422" />
     <state width="1899" height="233" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595603504395" />
-    <state width="2539" height="368" key="GridCell.Tab.0.center" timestamp="1595974210422">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="1899" height="368" key="GridCell.Tab.0.center" timestamp="1596036263216">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1001" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595962779161" />
+    <state width="1899" height="368" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596036263216" />
     <state width="2539" height="368" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1595974210422" />
     <state width="1899" height="233" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595603504395" />
-    <state width="2539" height="368" key="GridCell.Tab.0.left" timestamp="1595974210421">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="1899" height="368" key="GridCell.Tab.0.left" timestamp="1596036263216">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1001" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595962779161" />
+    <state width="1899" height="368" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596036263216" />
     <state width="2539" height="368" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1595974210421" />
     <state width="1899" height="233" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595603504395" />
-    <state width="2539" height="368" key="GridCell.Tab.0.right" timestamp="1595974210422">
-      <screen x="1920" y="0" width="2560" height="1400" />
+    <state width="1899" height="368" key="GridCell.Tab.0.right" timestamp="1596036263216">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1001" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595962779162" />
+    <state width="1899" height="368" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596036263216" />
     <state width="2539" height="368" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1595974210422" />
     <state width="1899" height="233" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595603504395" />
     <state width="1899" height="297" key="GridCell.Tab.1.bottom" timestamp="1595972081312">
@@ -438,11 +445,11 @@
     </state>
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595254393781" />
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594664849074" />
-    <state x="2656" y="335" key="Vcs.Push.Dialog.v2" timestamp="1595971793065">
+    <state x="2656" y="335" key="Vcs.Push.Dialog.v2" timestamp="1595974324145">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595958567067" />
-    <state x="2656" y="335" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1595971793065" />
+    <state x="2656" y="335" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1595974324145" />
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595603637329" />
     <state x="-411" y="212" width="1936" height="1142" maximized="true" key="dock-window-1" timestamp="1595973642650">
       <screen x="0" y="0" width="1920" height="1040" />
