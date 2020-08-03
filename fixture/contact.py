@@ -1,4 +1,7 @@
+import time
+
 from selenium.webdriver.support.select import Select
+from models.contact import Contact
 
 
 class ContactHelper:
@@ -79,7 +82,6 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("home page").click()
 
-
     def confirm_edit(self):
         wd = self.app.wd
         # confirm editing contact
@@ -95,6 +97,8 @@ class ContactHelper:
         wd.find_element_by_xpath('//input[@value="Delete"]').click()
         # submit alert
         wd.switch_to_alert().accept()
+        time.sleep(3)
+        #wd.find_element_by_css_selector("div.msgbox") - не помог
         self.open_home_page()
 
     def count(self):
@@ -102,3 +106,13 @@ class ContactHelper:
         self.open_home_page()
         # search all checkboxes on page
         return len(wd.find_elements_by_name("selected[]"))
+
+    def get_contact_list(self):
+        wd = self.app.wd
+        self.open_home_page()
+        contact_list = []
+        for element in wd.find_elements_by_css_selector("tr[name='entry']"):
+            text = element.text
+            element.find_element_by_name("selected[]").get_attribute("value")
+            contact_list.append(Contact(first_name_contact=text, id=id))
+        return contact_list
