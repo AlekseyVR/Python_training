@@ -4,3 +4,9 @@ class Group:
         self.logo_group = logo_group
         self.footer_group = footer_group
         self.id = id
+
+    def __repr__(self):
+        return "%s:%s" % (self.id, self.name_group)
+
+    def __eq__(self, other):
+        return self.id == other.id and self.name_group == other.name_group
