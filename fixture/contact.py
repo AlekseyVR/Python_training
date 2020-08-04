@@ -29,14 +29,24 @@ class ContactHelper:
         wd.find_element_by_name("submit").click()
         self.return_home_page()
 
-    def edit_first_contact(self, new_contact_data):
-        # edit_contact
+    def edit_contact_by_index(self, index, new_contact_data):
+        # edit_some_contact
         wd = self.app.wd
         self.open_home_page()
-        wd.find_element_by_xpath("//img[@title='Edit']").click()
+        wd.find_elements_by_xpath("//img[@title='Edit']")[index].click()
         self.data_contact(new_contact_data)
         self.confirm_edit()
         self.contact_cache = None
+
+    def edit_first_contact(self, new_contact_data):
+        self.edit_contact_by_index(0)
+        # edit_contact - старый тест подготовлен для удаления
+        # wd = self.app.wd
+        # self.open_home_page()
+        # wd.find_element_by_xpath("//img[@title='Edit']").click()
+        # self.data_contact(new_contact_data)
+        # self.confirm_edit()
+        # self.contact_cache = None
 
     def change_field_value(self, field_name, text):
         wd = self.app.wd
@@ -90,11 +100,11 @@ class ContactHelper:
         wd.find_element_by_name("update").click()
         wd.find_element_by_link_text("home page").click()
 
-    def delete_first_contact(self):
+    def delete_contact_by_index(self, index):
         wd = self.app.wd
         self.open_home_page()
-        # submit first contact
-        wd.find_element_by_name("selected[]").click()
+        # submit some contact
+        wd.find_elements_by_name("selected[]")[index].click()
         # submit deletion
         wd.find_element_by_xpath('//input[@value="Delete"]').click()
         # submit alert
@@ -103,6 +113,9 @@ class ContactHelper:
         # wd.find_element_by_css_selector("div.msgbox") - не помог, падает с ошибкой
         self.open_home_page()
         self.contact_cache = None
+
+    def delete_first_contact(self):
+        self.delete_contact_by_index(0)
 
     def count(self):
         wd = self.app.wd
