@@ -98,7 +98,7 @@ class ContactHelper:
         # submit alert
         wd.switch_to_alert().accept()
         time.sleep(3)
-        #wd.find_element_by_css_selector("div.msgbox") - не помог
+        # wd.find_element_by_css_selector("div.msgbox") - не помог, падает с ошибкой
         self.open_home_page()
 
     def count(self):
@@ -112,7 +112,9 @@ class ContactHelper:
         self.open_home_page()
         contact_list = []
         for element in wd.find_elements_by_css_selector("tr[name='entry']"):
-            text = element.text
-            element.find_element_by_name("selected[]").get_attribute("value")
-            contact_list.append(Contact(first_name_contact=text, id=id))
+            id = element.find_element_by_name("selected[]").get_attribute("id")
+            first_name_contact = element.find_elements_by_tag_name("td")[2].text
+            last_name_contact = element.find_elements_by_tag_name("td")[1].text
+            contact_list.append(
+                Contact(first_name_contact=first_name_contact, last_name_contact=last_name_contact, id=id))
         return contact_list

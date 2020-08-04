@@ -32,3 +32,9 @@ class Contact:
         self.secondary_home = secondary_home
         self.notes_contact = notes_contact
         self.id = id
+
+    def __repr__(self):
+        return "%s:%s:%s" % (self.id, self.first_name_contact, self.last_name_contact)
+
+    def __eq__(self, other):
+        return self.id == other.id and self.first_name_contact == other.first_name_contact

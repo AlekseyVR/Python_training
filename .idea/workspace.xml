@@ -19,13 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="Сортировка свписков перед сравнением добавление и редактирование Групп">
+    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="добавлены проверки по количественному признаку">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Test_add_contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test_add_contacts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,8 +165,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in test_del_contact.py" />
-        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in Test_add_contacts.py" />
+        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
         <item itemvalue="Python tests.pytest in test" />
         <item itemvalue="Python tests.pytest in test_edit_group.py" />
       </list>
@@ -374,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596485083530</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="добавлены проверки по количественному признаку">
+      <created>1596495291262</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1596495291262</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -390,7 +395,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Повышение читаемости кода. Рефакторинг кода в методы" />
     <MESSAGE value="Передача парметров в методы.&#10;Добавлен второй тест с пустыми значениями для ввода." />
     <MESSAGE value="Выделены вспомогательные методы и классы. GRoup" />
     <MESSAGE value="Добавлен тест на добавление контактов" />
@@ -415,7 +419,8 @@
     <MESSAGE value="загружены списки имен и айди групп + сравнение по количественному признаку" />
     <MESSAGE value="улучшенн тест на удаление групп.&#10;Добавлено сравнение списков до +[-1] и после удаления" />
     <MESSAGE value="Сортировка свписков перед сравнением добавление и редактирование Групп" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сортировка свписков перед сравнением добавление и редактирование Групп" />
+    <MESSAGE value="добавлены проверки по количественному признаку" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлены проверки по количественному признаку" />
   </component>
   <component name="WindowStateProjectService">
     <state x="962" y="363" width="532" height="327" key="#Notifications" timestamp="1596468597171">
@@ -446,29 +451,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="333" y="326" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594663469331" />
-    <state width="1397" height="1081" key="GridCell.Tab.0.bottom" timestamp="1596495147943">
+    <state width="1307" height="438" key="GridCell.Tab.0.bottom" timestamp="1596560279216">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1143" height="489" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596491816959" />
-    <state width="1397" height="1081" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596495147943" />
+    <state width="1307" height="438" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596560279216" />
     <state width="1143" height="424" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596040486856" />
-    <state width="1397" height="1081" key="GridCell.Tab.0.center" timestamp="1596495147942">
+    <state width="1307" height="438" key="GridCell.Tab.0.center" timestamp="1596560279216">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1143" height="489" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596491816959" />
-    <state width="1397" height="1081" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596495147942" />
+    <state width="1307" height="438" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596560279216" />
     <state width="1143" height="424" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596040486856" />
-    <state width="1397" height="1081" key="GridCell.Tab.0.left" timestamp="1596495147942">
+    <state width="1307" height="438" key="GridCell.Tab.0.left" timestamp="1596560279216">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1143" height="489" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596491816959" />
-    <state width="1397" height="1081" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596495147942" />
+    <state width="1307" height="438" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596560279216" />
     <state width="1143" height="424" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596040486856" />
-    <state width="1397" height="1081" key="GridCell.Tab.0.right" timestamp="1596495147943">
+    <state width="1307" height="438" key="GridCell.Tab.0.right" timestamp="1596560279216">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state width="1143" height="489" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596491816959" />
-    <state width="1397" height="1081" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596495147943" />
+    <state width="1307" height="438" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596560279216" />
     <state width="1143" height="424" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596040486856" />
     <state width="1397" height="526" key="GridCell.Tab.1.bottom" timestamp="1596492051034">
       <screen x="1920" y="0" width="2560" height="1400" />
@@ -499,17 +504,18 @@
     </state>
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595254393781" />
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594664849074" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1596485091356">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2656" y="335" key="Vcs.Push.Dialog.v2" timestamp="1596495297553">
+      <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596485091356" />
-    <state x="2656" y="335" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1595974324145" />
+    <state x="2656" y="335" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596495297553" />
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595603637329" />
-    <state x="1915" y="0" width="1300" height="1407" key="dock-window-1" timestamp="1596493185564">
+    <state x="1907" y="0" width="1128" height="1407" key="dock-window-1" timestamp="1596559433801">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2216" y="205" width="1580" height="1028" key="dock-window-1/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596490283845" />
-    <state x="1915" y="0" width="1300" height="1407" key="dock-window-1/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596493185564" />
+    <state x="1907" y="0" width="1128" height="1407" key="dock-window-1/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596559433801" />
+    <state x="-2" y="0" width="1300" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1596535521932" />
     <state x="2815" y="394" key="git4idea.merge.GitPullDialog" timestamp="1595877074971">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
