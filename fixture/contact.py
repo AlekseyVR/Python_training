@@ -21,6 +21,7 @@ class ContactHelper:
         self.data_contact(contact)
         self.confirm_create()
         self.open_home_page()
+        self.contact_cache = None
 
     def confirm_create(self):
         wd = self.app.wd
@@ -35,6 +36,7 @@ class ContactHelper:
         wd.find_element_by_xpath("//img[@title='Edit']").click()
         self.data_contact(new_contact_data)
         self.confirm_edit()
+        self.contact_cache = None
 
     def change_field_value(self, field_name, text):
         wd = self.app.wd
@@ -100,6 +102,7 @@ class ContactHelper:
         time.sleep(3)
         # wd.find_element_by_css_selector("div.msgbox") - не помог, падает с ошибкой
         self.open_home_page()
+        self.contact_cache = None
 
     def count(self):
         wd = self.app.wd
@@ -107,14 +110,17 @@ class ContactHelper:
         # search all checkboxes on page
         return len(wd.find_elements_by_name("selected[]"))
 
+    contact_cache = None
+
     def get_contact_list(self):
-        wd = self.app.wd
-        self.open_home_page()
-        contact_list = []
-        for element in wd.find_elements_by_css_selector("tr[name='entry']"):
-            id = element.find_element_by_name("selected[]").get_attribute("id")
-            first_name_contact = element.find_elements_by_tag_name("td")[2].text
-            last_name_contact = element.find_elements_by_tag_name("td")[1].text
-            contact_list.append(
-                Contact(first_name_contact=first_name_contact, last_name_contact=last_name_contact, id=id))
-        return contact_list
+        if self.contact_cache is None:
+            wd = self.app.wd
+            self.open_home_page()
+            self.contact_cache = []
+            for element in wd.find_elements_by_css_selector("tr[name='entry']"):
+                id = element.find_element_by_name("selected[]").get_attribute("id")
+                first_name_contact = element.find_elements_by_tag_name("td")[2].text
+                last_name_contact = element.find_elements_by_tag_name("td")[1].text
+                self.contact_cache.append(
+                    Contact(first_name_contact=first_name_contact, last_name_contact=last_name_contact, id=id))
+        return list(self.contact_cache)
