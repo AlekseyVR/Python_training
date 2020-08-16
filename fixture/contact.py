@@ -1,5 +1,5 @@
 import time
-
+import re
 from selenium.webdriver.support.select import Select
 from models.contact import Contact
 
@@ -125,6 +125,13 @@ class ContactHelper:
 
     contact_cache = None
 
+    def open_contact_to_edit_by_index(self, index):
+        wd = self.app.wd
+        self.open_home_page()
+        row = wd.find_elements_by_name("entry")[index]
+        cell = row.find_elements_by_tag_name("td")[7]
+        cell.find_element_by_tag_name("a").click()
+
     def get_contact_list(self):
         if self.contact_cache is None:
             wd = self.app.wd
@@ -134,6 +141,50 @@ class ContactHelper:
                 id = element.find_element_by_name("selected[]").get_attribute("id")
                 first_name_contact = element.find_elements_by_tag_name("td")[2].text
                 last_name_contact = element.find_elements_by_tag_name("td")[1].text
+                all_phones = element.find_elements_by_tag_name("td")[5].text.splitlines()
+                address_contact = element.find_elements_by_tag_name("td")[3].text
+                all_emails = element.find_elements_by_tag_name("td")[4].text.splitlines()
                 self.contact_cache.append(
-                    Contact(first_name_contact=first_name_contact, last_name_contact=last_name_contact, id=id))
+                    Contact(first_name_contact=first_name_contact, last_name_contact=last_name_contact, id=id,
+                            home_contact=all_phones[0], mobile_contact=all_phones[1], work_contact=all_phones[2],
+                            secondary_home=all_phones[3], address_contact=address_contact, e_mail_contact=all_emails[0],
+                            e_mail_2_contact=all_emails[1], e_mail_3_contact=all_emails[2]))
         return list(self.contact_cache)
+
+    def get_contact_info_from_edit_page(self, index):
+        wd = self.app.wd
+        self.open_contact_to_edit_by_index(index)
+        first_name_contact = wd.find_element_by_name("firstname").get_attribute("value")
+        last_name_contact = wd.find_element_by_name("lastname").get_attribute("value")
+        id = wd.find_element_by_name("id").get_attribute("value")
+        home_contact = wd.find_element_by_name("home").get_attribute("value")
+        work_contact = wd.find_element_by_name("work").get_attribute("value")
+        mobile_contact = wd.find_element_by_name("mobile").get_attribute("value")
+        secondary_home = wd.find_element_by_name("phone2").get_attribute("value")
+        address_contact = wd.find_element_by_name("address").get_attribute("value")
+        e_mail_contact = wd.find_element_by_name("email").get_attribute("value")
+        e_mail_2_contact = wd.find_element_by_name("email2").get_attribute("value")
+        e_mail_3_contact = wd.find_element_by_name("email3").get_attribute("value")
+        return Contact(first_name_contact=first_name_contact, last_name_contact=last_name_contact, id=id,
+                       home_contact=home_contact, work_contact=work_contact, mobile_contact=mobile_contact,
+                       secondary_home=secondary_home, address_contact=address_contact, e_mail_contact=e_mail_contact,
+                       e_mail_2_contact=e_mail_2_contact, e_mail_3_contact=e_mail_3_contact)
+
+    def open_contact_view_by_index(self, index):
+        wd = self.app.wd
+        self.open_home_page()
+        row = wd.find_elements_by_name("entry")[index]
+        cell = row.find_elements_by_tag_name("td")[6]
+        cell.find_element_by_tag_name("a").click()
+
+    def get_contact_from_view_page(self, index):
+        wd = self.app.wd
+        self.open_contact_view_by_index(index)
+        text = wd.find_element_by_id("content").text
+        home_contact = re.search("H: (.*)", text).group(1)
+        work_contact = re.search("W: (.*)", text).group(1)
+        mobile_contact = re.search("M: (.*)", text).group(1)
+        secondary_home = re.search("P: (.*)", text).group(1)
+        return Contact(home_contact=home_contact, work_contact=work_contact, mobile_contact=mobile_contact,
+                       secondary_home=secondary_home)
+
