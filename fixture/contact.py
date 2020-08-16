@@ -141,14 +141,13 @@ class ContactHelper:
                 id = element.find_element_by_name("selected[]").get_attribute("id")
                 first_name_contact = element.find_elements_by_tag_name("td")[2].text
                 last_name_contact = element.find_elements_by_tag_name("td")[1].text
-                all_phones = element.find_elements_by_tag_name("td")[5].text.splitlines()
+                all_phones = element.find_elements_by_tag_name("td")[5].text
                 address_contact = element.find_elements_by_tag_name("td")[3].text
-                all_emails = element.find_elements_by_tag_name("td")[4].text.splitlines()
+                all_emails = element.find_elements_by_tag_name("td")[4].text
                 self.contact_cache.append(
                     Contact(first_name_contact=first_name_contact, last_name_contact=last_name_contact, id=id,
-                            home_contact=all_phones[0], mobile_contact=all_phones[1], work_contact=all_phones[2],
-                            secondary_home=all_phones[3], address_contact=address_contact, e_mail_contact=all_emails[0],
-                            e_mail_2_contact=all_emails[1], e_mail_3_contact=all_emails[2]))
+                            all_phones_from_home_page=all_phones, address_contact=address_contact,
+                            all_emails_from_home_page=all_emails))
         return list(self.contact_cache)
 
     def get_contact_info_from_edit_page(self, index):
@@ -166,7 +165,7 @@ class ContactHelper:
         e_mail_2_contact = wd.find_element_by_name("email2").get_attribute("value")
         e_mail_3_contact = wd.find_element_by_name("email3").get_attribute("value")
         return Contact(first_name_contact=first_name_contact, last_name_contact=last_name_contact, id=id,
-                       home_contact=home_contact, work_contact=work_contact, mobile_contact=mobile_contact,
+                       home_contact=home_contact,mobile_contact=mobile_contact, work_contact=work_contact,
                        secondary_home=secondary_home, address_contact=address_contact, e_mail_contact=e_mail_contact,
                        e_mail_2_contact=e_mail_2_contact, e_mail_3_contact=e_mail_3_contact)
 
