@@ -6,10 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/target.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Test_Add_Group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test_Add_Group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/env" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -45,7 +44,7 @@
       <recent name="E:\python\Python_training\models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in Test_Add_Group.py">
+  <component name="RunManager" selected="Python tests.pytest in test_del_group.py">
     <configuration default="true" type="tests" factoryName="Unittests" activateToolWindowBeforeRun="false">
       <module name="Python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -66,7 +65,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -82,7 +81,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -98,7 +97,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -114,7 +113,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -130,7 +129,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -150,14 +149,15 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_del_group.py" />
         <item itemvalue="Python tests.pytest in Test_Add_Group.py" />
         <item itemvalue="Python tests.pytest in test" />
-        <item itemvalue="Python tests.pytest in test_del_group.py" />
         <item itemvalue="Python tests.pytest for Test_add_contacts.test_add_contacts" />
         <item itemvalue="Python tests.pytest for Test_Add_Group.test_add_group" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -503,11 +503,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="664" y="118" key="#Unittests_in_Test_Add_Group.py/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595164402081" />
-    <state x="286" y="350" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597872015239">
+    <state x="286" y="350" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598184352474">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595254517443" />
-    <state x="286" y="350" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597872015239" />
+    <state x="286" y="350" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598184352474" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594664321335">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -524,34 +524,34 @@
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2012" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1595970439718" />
-    <state x="333" y="326" key="FileChooserDialogImpl" timestamp="1594663469331">
+    <state x="333" y="326" key="FileChooserDialogImpl" timestamp="1598184011803">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="333" y="326" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594663469331" />
-    <state width="1899" height="329" key="GridCell.Tab.0.bottom" timestamp="1597872670913">
+    <state x="333" y="326" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598184011803" />
+    <state width="1899" height="274" key="GridCell.Tab.0.bottom" timestamp="1598184354901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596570190612" />
     <state width="1256" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596571371525" />
-    <state width="1899" height="329" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597872670913" />
-    <state width="1899" height="329" key="GridCell.Tab.0.center" timestamp="1597872670913">
+    <state width="1899" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598184354901" />
+    <state width="1899" height="274" key="GridCell.Tab.0.center" timestamp="1598184354900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="322" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596570190611" />
     <state width="1256" height="322" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596571371525" />
-    <state width="1899" height="329" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597872670913" />
-    <state width="1899" height="329" key="GridCell.Tab.0.left" timestamp="1597872670913">
+    <state width="1899" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598184354900" />
+    <state width="1899" height="274" key="GridCell.Tab.0.left" timestamp="1598184354900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="322" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596570190611" />
     <state width="1256" height="322" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596571371525" />
-    <state width="1899" height="329" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597872670913" />
-    <state width="1899" height="329" key="GridCell.Tab.0.right" timestamp="1597872670913">
+    <state width="1899" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598184354900" />
+    <state width="1899" height="274" key="GridCell.Tab.0.right" timestamp="1598184354900">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="322" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596570190612" />
     <state width="1256" height="322" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596571371525" />
-    <state width="1899" height="329" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597872670913" />
+    <state width="1899" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598184354900" />
     <state width="1397" height="526" key="GridCell.Tab.1.bottom" timestamp="1596492051034">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
@@ -580,11 +580,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="763" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597497214534" />
-    <state x="327" y="184" key="SettingsEditor" timestamp="1595254393781">
+    <state x="327" y="184" key="SettingsEditor" timestamp="1598184312628">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595254393781" />
-    <state x="327" y="184" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594664849074" />
+    <state x="327" y="184" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598184312628" />
     <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1597869473532">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
