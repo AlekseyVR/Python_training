@@ -6,11 +6,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/test_db_matches_ui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target.json" beforeDir="false" afterPath="$PROJECT_DIR$/target.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test_Add_Group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test_Add_Group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +47,7 @@
       <recent name="E:\python\Python_training\models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_db_matches_ui.py">
+  <component name="RunManager" selected="Python tests.pytest in test_del_group.py">
     <configuration name="check_db_connection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,22 +121,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Python_training" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest in test_db_matches_ui.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,20 +137,36 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_del_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Python_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_del_group.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.groups" />
       <item itemvalue="Python.check_db_connection" />
       <item itemvalue="Python tests.pytest in Test_Add_Group.py" />
-      <item itemvalue="Python tests.pytest in test" />
       <item itemvalue="Python tests.pytest in test_db_matches_ui.py" />
+      <item itemvalue="Python tests.pytest in test_del_group.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test_del_group.py" />
+        <item itemvalue="Python tests.pytest in Test_Add_Group.py" />
         <item itemvalue="Python tests.pytest in test_db_matches_ui.py" />
         <item itemvalue="Python.check_db_connection" />
         <item itemvalue="Python.groups" />
-        <item itemvalue="Python tests.pytest in test" />
-        <item itemvalue="Python tests.pytest in Test_Add_Group.py" />
       </list>
     </recent_temporary>
   </component>
@@ -475,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598903642383</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Загрузка информации из базы данных в виде объектов">
+      <created>1598987613659</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1598987613659</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -521,7 +529,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Работа над ошибками:&#10;Проведена дополнительная декомпозиция методов создания и редактирования.&#10;Заполнение данных происходит через один метод data_group\contact. Добавлены методы на разные кнопки Подтвердить(создание), Обновить(редактируемое)." />
     <MESSAGE value="Оптимизация ввода данных в формы&#10;if then else для модификации групп" />
     <MESSAGE value="Валидация фикстуры, проверка текущего состояния сессии в SessionHelper.&#10;Подправлены тесты контактов, добавлен клик на главную в контакты." />
     <MESSAGE value="В тесты добавлены проверки на наличие хотя бы одного элемента группы и контакты" />
@@ -546,7 +553,8 @@
     <MESSAGE value="Реализованы генераторы тестовых данных при помощи jsonpickle" />
     <MESSAGE value="переход на др. пк" />
     <MESSAGE value="Фикстура для взаимодействия с базой данных" />
-    <option name="LAST_COMMIT_MESSAGE" value="Фикстура для взаимодействия с базой данных" />
+    <MESSAGE value="Загрузка информации из базы данных в виде объектов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Загрузка информации из базы данных в виде объектов" />
   </component>
   <component name="WindowStateProjectService">
     <state x="962" y="363" width="532" height="327" key="#Notifications" timestamp="1596468597171">
@@ -570,10 +578,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="867" y="191" width="637" height="658" key="#xdebugger.XInspectDialog/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596476389200" />
-    <state x="540" y="3" key="CommitChangelistDialog2" timestamp="1598903641448">
+    <state x="540" y="3" key="CommitChangelistDialog2" timestamp="1598987613045">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="3" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1598903641448" />
+    <state x="540" y="3" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1598987613045" />
     <state x="540" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1598898467649" />
     <state x="69" y="68" width="1782" height="904" key="DiffContextDialog" timestamp="1598899165563">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -584,28 +592,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="333" y="326" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598900785431" />
-    <state width="1899" height="515" key="GridCell.Tab.0.bottom" timestamp="1598987315658">
+    <state width="1899" height="274" key="GridCell.Tab.0.bottom" timestamp="1599064769680">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="515" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1598987315658" />
+    <state width="1899" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599064769680" />
     <state width="1256" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596571371525" />
     <state width="1899" height="349" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598900319035" />
-    <state width="1899" height="515" key="GridCell.Tab.0.center" timestamp="1598987315658">
+    <state width="1899" height="274" key="GridCell.Tab.0.center" timestamp="1599064769680">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="515" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1598987315658" />
+    <state width="1899" height="274" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599064769680" />
     <state width="1256" height="322" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596571371525" />
     <state width="1899" height="349" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598900319035" />
-    <state width="1899" height="515" key="GridCell.Tab.0.left" timestamp="1598987315658">
+    <state width="1899" height="274" key="GridCell.Tab.0.left" timestamp="1599064769680">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="515" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1598987315658" />
+    <state width="1899" height="274" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599064769680" />
     <state width="1256" height="322" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596571371525" />
     <state width="1899" height="349" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598900319035" />
-    <state width="1899" height="515" key="GridCell.Tab.0.right" timestamp="1598987315658">
+    <state width="1899" height="274" key="GridCell.Tab.0.right" timestamp="1599064769680">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="515" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1598987315658" />
+    <state width="1899" height="274" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599064769680" />
     <state width="1256" height="322" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596571371525" />
     <state width="1899" height="349" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598900319035" />
     <state width="1899" height="127" key="GridCell.Tab.1.bottom" timestamp="1598986901468">
