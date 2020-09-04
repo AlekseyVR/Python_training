@@ -38,6 +38,16 @@ class ContactHelper:
         self.confirm_edit()
         self.contact_cache = None
 
+    def edit_contact_by_id(self, id, new_contact_data):
+        # edit_some_contact
+        wd = self.app.wd
+        self.open_home_page()
+        self.select_contact_by_id(id)
+        wd.find_element_by_css_selector("a[href='edit.php?id=%s" % id).click()
+        self.data_contact(new_contact_data)
+        self.confirm_edit()
+        self.contact_cache = None
+
     def edit_first_contact(self, new_contact_data):
         self.edit_contact_by_index(0)
         # edit_contact - старый тест подготовлен для удаления
@@ -114,6 +124,25 @@ class ContactHelper:
         self.open_home_page()
         self.contact_cache = None
 
+    def delete_contact_by_id(self, id):
+        wd = self.app.wd
+        self.open_home_page()
+        self.select_contact_by_id(id)
+        # submit some contact
+        # wd.find_element_by_name("selected[]")[id].click()
+        # submit deletion
+        wd.find_element_by_xpath('//input[@value="Delete"]').click()
+        # submit alert
+        wd.switch_to_alert().accept()
+        time.sleep(3)
+        # wd.find_element_by_css_selector("div.msgbox") - не помог, падает с ошибкой
+        self.open_home_page()
+        self.contact_cache = None
+
+    def select_contact_by_id(self, id):
+        wd = self.app.wd
+        wd.find_element_by_css_selector("input[value='%s" % id).click()
+
     def delete_first_contact(self):
         self.delete_contact_by_index(0)
 
@@ -165,7 +194,7 @@ class ContactHelper:
         e_mail_2_contact = wd.find_element_by_name("email2").get_attribute("value")
         e_mail_3_contact = wd.find_element_by_name("email3").get_attribute("value")
         return Contact(first_name_contact=first_name_contact, last_name_contact=last_name_contact, id=id,
-                       home_contact=home_contact,mobile_contact=mobile_contact, work_contact=work_contact,
+                       home_contact=home_contact, mobile_contact=mobile_contact, work_contact=work_contact,
                        secondary_home=secondary_home, address_contact=address_contact, e_mail_contact=e_mail_contact,
                        e_mail_2_contact=e_mail_2_contact, e_mail_3_contact=e_mail_3_contact)
 
@@ -186,4 +215,3 @@ class ContactHelper:
         secondary_home = re.search("P: (.*)", text).group(1)
         return Contact(home_contact=home_contact, work_contact=work_contact, mobile_contact=mobile_contact,
                        secondary_home=secondary_home)
-
