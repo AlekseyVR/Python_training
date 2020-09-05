@@ -22,12 +22,21 @@ class ORMFixture:
         id = PrimaryKey(int, column='id')
         first_name_contact = Optional(str, column="firstname")
         last_name_contact = Optional(str, column="lastname")
+        contact_address = Optional(str, column="address")
+        home_contact = Optional(str, column='home')
+        mobile_contact = Optional(str, column='mobile')
+        work_contact = Optional(str, column='work')
+        secondary_home = Optional(str, column='phone2')
+        e_mail_contact = Optional(str, column='email')
+        e_mail_2_contact = Optional(str, column='email2')
+        e_mail_3_contact = Optional(str, column='email3')
         deprecated = Optional(datetime, column="deprecated")
         groups = Set(lambda: ORMFixture.ORMGroup, table="address_in_groups", column="group_id", reverse="contacts", lazy=True)
 
     def __init__(self, host, name, user, password):
         self.db.bind('mysql', host=host, database=name, user=user, password=password)
         self.db.generate_mapping()
+        sql_debug(True)
 
     def convert_groups_to_model(self, groups):
         def convert(group):
@@ -57,3 +66,14 @@ class ORMFixture:
         orm_group = list(select(g for g in ORMFixture.ORMGroup if g.id == group.id))[0]
         return self.convert_contacts_to_model(select(c for c in ORMFixture.ORMContact if c.deprecated is None and orm_group not in c.groups))
         # return self.convert_contacts_to_model(orm_group.contacts)
+
+    @db_session
+    def get_groups_containing_contact(self, contact):
+        orm_contact = list(select(c for c in ORMFixture.ORMContact if c.id == contact.id))[0]
+        return self.convert_groups_to_model(orm_contact.groups)
+
+    @db_session
+    def get_groups_not_containing_contact(self, contact):
+        orm_contact = list(select(c for c in ORMFixture.ORMContact if c.id == contact.id))[0]
+        return self.convert_groups_to_model(
+            select(g for g in ORMFixture.ORMGroup if orm_contact not in g.contacts))

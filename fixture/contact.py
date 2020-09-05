@@ -215,3 +215,12 @@ class ContactHelper:
         secondary_home = re.search("P: (.*)", text).group(1)
         return Contact(home_contact=home_contact, work_contact=work_contact, mobile_contact=mobile_contact,
                        secondary_home=secondary_home)
+
+    def add_contact_to_group(self, contact_id, group_id, group_name):
+        wd = self.app.wd
+        self.open_home_page()
+        self.select_contact_by_id(contact_id)
+        wd.find_element_by_name("to_group").click()
+        wd.find_element_by_xpath("(//option[@value=%s])[2]" % group_id).click()
+        wd.find_element_by_name("add").click()
+        wd.find_element_by_link_text('group page "%s"' % group_name).click()
