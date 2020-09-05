@@ -1,11 +1,14 @@
 import pymysql.cursors
-from fixture.db import DbFixture
+from fixture.orm import ORMFixture
+from models.group import Group
 
-db = DbFixture(host="127.0.0.1", name="addressbook", user="root", password="")
+db = ORMFixture(host="localhost", name="addressbook", user="root", password="")
+
 try:
-    contacts = db.get_contact_list()
-    for contact in contacts:
-        print(contacts)
-    print(len(contacts))
+    l = db.get_contacts_not_in_group(Group(id="94"))
+    for item in l:
+        print(item)
+    print(len(l))
 finally:
-    db.destroy()
+    pass
+    # db.destroy()
