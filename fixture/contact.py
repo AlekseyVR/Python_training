@@ -224,3 +224,12 @@ class ContactHelper:
         wd.find_element_by_xpath("(//option[@value=%s])[2]" % group_id).click()
         wd.find_element_by_name("add").click()
         wd.find_element_by_link_text('group page "%s"' % group_name).click()
+
+    def delete_contact_from_group(self, group_id, contact_id):
+        wd = self.app.wd
+        self.open_home_page()
+        wd.find_element_by_name("group").click()
+        wd.find_element_by_xpath("//option[@value=%s]" % group_id).click()
+        self.select_contact_by_id(contact_id)
+        wd.find_element_by_name("remove").click()
+        wd.find_element_by_css_selector("div.msgbox")
