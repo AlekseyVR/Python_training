@@ -1,5 +1,7 @@
 import random
+import bdd
 from models.group import Group
+
 
 
 def test_delete_some_group(app, db, check_ui):
