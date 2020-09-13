@@ -5,10 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,20 +164,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594660431685</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Настроен pytest в env проекте">
-      <created>1594664432042</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1594664432043</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Повышение читаемости кода. Рефакторинг кода в методы">
-      <created>1594667620023</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1594667620023</updated>
     </task>
     <task id="LOCAL-00003" summary="Повышение читаемости кода. Рефакторинг кода в методы">
       <created>1594671071907</created>
@@ -511,7 +494,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600012219162</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Реализованы тесты в стиле BDD для Групп">
+      <created>1600037345103</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1600037345104</updated>
+    </task>
+    <task id="LOCAL-00051" summary="requirements.txt">
+      <created>1600037425126</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1600037425126</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -557,7 +554,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="загружены списки имен и айди групп + сравнение по количественному признаку" />
     <MESSAGE value="улучшенн тест на удаление групп.&#10;Добавлено сравнение списков до +[-1] и после удаления" />
     <MESSAGE value="Сортировка свписков перед сравнением добавление и редактирование Групп" />
     <MESSAGE value="добавлены проверки по количественному признаку" />
@@ -582,7 +578,8 @@
     <MESSAGE value="Задание №22: Реализовать тесты для добавления контакта в группу и удаления контакта из группы" />
     <MESSAGE value="Задание №22: добавлен тест на удаление контакта из группы" />
     <MESSAGE value="Реализованы тесты в стиле BDD для Групп" />
-    <option name="LAST_COMMIT_MESSAGE" value="Реализованы тесты в стиле BDD для Групп" />
+    <MESSAGE value="requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirements.txt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="962" y="363" width="532" height="327" key="#Notifications" timestamp="1596468597171">
@@ -610,11 +607,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="867" y="191" width="637" height="658" key="#xdebugger.XInspectDialog/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596476389200" />
-    <state x="540" y="3" key="CommitChangelistDialog2" timestamp="1600012218476">
+    <state x="540" y="3" key="CommitChangelistDialog2" timestamp="1600037424459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1840" y="4" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@-2560.0.2560.1400" timestamp="1599315304503" />
-    <state x="540" y="3" key="CommitChangelistDialog2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600012218476" />
+    <state x="540" y="3" key="CommitChangelistDialog2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600037424459" />
+    <state x="2640" y="-343" key="CommitChangelistDialog2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1600037344308" />
     <state x="540" y="3" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599065876701" />
     <state x="540" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1598898467649" />
     <state x="69" y="68" width="1782" height="904" key="DiffContextDialog" timestamp="1598899165563">
@@ -710,11 +708,12 @@
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600037017269" />
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595254393781" />
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598900982171" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1600034831574">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1600037429295">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1824" y="335" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@-2560.0.2560.1400" timestamp="1599315311305" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600034831574" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600037429295" />
+    <state x="2656" y="-12" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1600037350889" />
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596570294769" />
     <state x="2656" y="335" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596563093902" />
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598295561589" />
