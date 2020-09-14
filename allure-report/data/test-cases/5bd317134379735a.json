@@ -1,0 +1,146 @@
+{
+  "uid" : "5bd317134379735a",
+  "name" : "test_add_group[None:nameOj;footerAb0j 2f0;logoP2G MySl4hC]",
+  "fullName" : "test.Test_Add_Group#test_add_group",
+  "historyId" : "bbe491c6c7a46335c858acdeaeb71e1d",
+  "time" : {
+    "start" : 1600120148140,
+    "stop" : 1600120148141,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: module 'pytest' has no attribute 'allure'",
+  "statusTrace" : "app = <fixture.application.Application object at 0x0489A4C0>, db = <fixture.db.DbFixture object at 0x0489A478>\njson_groups = None:nameOj;footerAb0j 2f0;logoP2G MySl4hC, check_ui = False\n\n    def test_add_group(app, db, json_groups, check_ui):\n        group = json_groups\n>       with pytest.allure.step('Given a group list'):\nE       AttributeError: module 'pytest' has no attribute 'allure'\n\ntest\\Test_Add_Group.py:8: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "check_ui",
+    "time" : {
+      "start" : 1600120148138,
+      "stop" : 1600120148138,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1600120148126,
+      "stop" : 1600120148136,
+      "duration" : 10
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "db",
+    "time" : {
+      "start" : 1600120135409,
+      "stop" : 1600120135427,
+      "duration" : 18
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "stop",
+    "time" : {
+      "start" : 1600120135409,
+      "stop" : 1600120135409,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1600120148328,
+      "stop" : 1600120148329,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1600120148334,
+      "stop" : 1600120150538,
+      "duration" : 2204
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "Test_Add_Group"
+  }, {
+    "name" : "host",
+    "value" : "verzhinskiy-nb"
+  }, {
+    "name" : "thread",
+    "value" : "134200-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.Test_Add_Group"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "json_groups",
+    "value" : "None:nameOj;footerAb0j 2f0;logoP2G MySl4hC"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5bd317134379735a.json",
+  "parameterValues" : [ "None:nameOj;footerAb0j 2f0;logoP2G MySl4hC" ]
+}

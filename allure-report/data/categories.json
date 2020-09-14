@@ -1,0 +1,60 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'l_name82 jn8' == 'l_name82  jn8'\n  - l_name82  jn8\n  ?          -\n  + l_name82 jn8",
+      "children" : [ {
+        "name" : "test_contact_data_for_random_contact",
+        "uid" : "e15d6b542173c885",
+        "parentUid" : "c692ecf441dd6c3431d341288b6a5647",
+        "status" : "failed",
+        "time" : {
+          "start" : 1600124658685,
+          "stop" : 1600124659320,
+          "duration" : 635
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c692ecf441dd6c3431d341288b6a5647"
+    }, {
+      "name" : "AssertionError: assert [57:namecIU:l_name82 jn8] == [52:Edit_firs...nameu qU, ...]\n  At index 0 diff: 57:namecIU:l_name82 jn8 != 52:Edit_first_name:l_name82  jn8\n  Right contains 22 more items, first extra item: 53:named 9rk An:l_nameg\n  Use -v to get the full diff",
+      "children" : [ {
+        "name" : "test_contact_db_info_matches_ui",
+        "uid" : "1a59aaa20b90d32c",
+        "parentUid" : "825660d6ed6f2552153c708810dc8cee",
+        "status" : "failed",
+        "time" : {
+          "start" : 1600124659442,
+          "stop" : 1600124659444,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "825660d6ed6f2552153c708810dc8cee"
+    }, {
+      "name" : "AssertionError: assert [174:;;, 176:...ShCX2Lsr, ...] == [174:;;, 176:...ShCX2Lsr, ...]\n  At index 21 diff: 200:nameOj;footerAb0j 2f0;logoP2G MySl4hC != 200:Modify group;footerAb0j 2f0;logoP2G MySl4hC\n  Use -v to get the full diff",
+      "children" : [ {
+        "name" : "test_edit_group_name",
+        "uid" : "155896071ae9a772",
+        "parentUid" : "77d85af0ae97d829564c98a0b0b5eb9f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1600124666127,
+          "stop" : 1600124667042,
+          "duration" : 915
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "77d85af0ae97d829564c98a0b0b5eb9f"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

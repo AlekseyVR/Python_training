@@ -7,11 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Test_Add_Group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test_Add_Group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Test_add_contacts.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test_add_contacts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_del_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_edit_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_edit_contact.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,13 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594660431685</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Добавлен тест на добавление контактов">
-      <created>1594675872384</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1594675872384</updated>
     </task>
     <task id="LOCAL-00007" summary="Тест изменен с unittest на pytest.&#10;Добавлен класс Application в отдельном файле application куда вынесены все методы login, create, запуск вебдрайвера.&#10;Изменена фикстура инициализация запуска через фреймвор pytest">
       <created>1595164939263</created>
@@ -515,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600120118757</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="allure_2">
+      <created>1600123743682</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1600123743682</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -561,7 +556,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Сортировка свписков перед сравнением добавление и редактирование Групп" />
     <MESSAGE value="добавлены проверки по количественному признаку" />
     <MESSAGE value="проверка равенства в удалении контактов" />
     <MESSAGE value="сортировка списков перед сравнением для добавления и редактирования Контактов" />
@@ -586,7 +580,8 @@
     <MESSAGE value="Реализованы тесты в стиле BDD для Групп" />
     <MESSAGE value="requirements.txt" />
     <MESSAGE value="allure" />
-    <option name="LAST_COMMIT_MESSAGE" value="allure" />
+    <MESSAGE value="allure_2" />
+    <option name="LAST_COMMIT_MESSAGE" value="allure_2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="962" y="363" width="532" height="327" key="#Notifications" timestamp="1596468597171">
@@ -614,11 +609,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="867" y="191" width="637" height="658" key="#xdebugger.XInspectDialog/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596476389200" />
-    <state x="540" y="3" key="CommitChangelistDialog2" timestamp="1600120116185">
+    <state x="540" y="3" key="CommitChangelistDialog2" timestamp="1600123742926">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1840" y="4" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@-2560.0.2560.1400" timestamp="1599315304503" />
-    <state x="540" y="3" key="CommitChangelistDialog2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600037424459" />
+    <state x="540" y="3" key="CommitChangelistDialog2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600123742926" />
     <state x="2640" y="-343" key="CommitChangelistDialog2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1600042174707" />
     <state x="540" y="3" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1600120116185" />
     <state x="540" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1598898467649" />
@@ -716,11 +711,11 @@
     <state x="2356" y="-99" key="SettingsEditor/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1600040733924" />
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595254393781" />
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598900982171" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1600120123794">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1600123749168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1824" y="335" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@-2560.0.2560.1400" timestamp="1599315311305" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600037429295" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600123749168" />
     <state x="2656" y="-12" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1600042187343" />
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1600120123794" />
     <state x="2656" y="335" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596563093902" />

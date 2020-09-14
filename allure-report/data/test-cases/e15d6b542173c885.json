@@ -1,0 +1,104 @@
+{
+  "uid" : "e15d6b542173c885",
+  "name" : "test_contact_data_for_random_contact",
+  "fullName" : "test.test_assert_contact#test_contact_data_for_random_contact",
+  "historyId" : "9843f6223666fc6bf0760153010e80b6",
+  "time" : {
+    "start" : 1600124658685,
+    "stop" : 1600124659320,
+    "duration" : 635
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'l_name82 jn8' == 'l_name82  jn8'\n  - l_name82  jn8\n  ?          -\n  + l_name82 jn8",
+  "statusTrace" : "app = <fixture.application.Application object at 0x03CB9A78>\n\n    def test_contact_data_for_random_contact(app):\n        if app.contact.count() == 0:\n            app.contact.create(Contact(first_name_contact=\"XXX\", last_name_contact=\"ZZZZ\", address_contact=\"Home\",\n                                       work_contact=\"1234455\", e_mail_contact=\"test@test.com\"))\n        old_contacts = app.contact.get_contact_list()\n        index = randrange(len(old_contacts))\n        contact_from_home_page = app.contact.get_contact_list()[index]\n        contact_from_edit_page = app.contact.get_contact_info_from_edit_page(index)\n        # firstname\n        assert contact_from_home_page.first_name_contact == contact_from_edit_page.first_name_contact\n        # lastname\n>       assert contact_from_home_page.last_name_contact == contact_from_edit_page.last_name_contact\nE       AssertionError: assert 'l_name82 jn8' == 'l_name82  jn8'\nE         - l_name82  jn8\nE         ?          -\nE         + l_name82 jn8\n\ntest\\test_assert_contact.py:17: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "app",
+    "time" : {
+      "start" : 1600124658681,
+      "stop" : 1600124658684,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "stop",
+    "time" : {
+      "start" : 1600124601790,
+      "stop" : 1600124601790,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1600124671832,
+      "stop" : 1600124672647,
+      "duration" : 815
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_assert_contact"
+  }, {
+    "name" : "host",
+    "value" : "verzhinskiy-nb"
+  }, {
+    "name" : "thread",
+    "value" : "102296-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_assert_contact"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e15d6b542173c885.json",
+  "parameterValues" : [ ]
+}

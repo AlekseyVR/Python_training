@@ -1,0 +1,134 @@
+{
+  "uid" : "1a59aaa20b90d32c",
+  "name" : "test_contact_db_info_matches_ui",
+  "fullName" : "test.test_assert_contact#test_contact_db_info_matches_ui",
+  "historyId" : "207dafcde380d28c3c46bfbcfe72908a",
+  "time" : {
+    "start" : 1600124659442,
+    "stop" : 1600124659444,
+    "duration" : 2
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert [57:namecIU:l_name82 jn8] == [52:Edit_firs...nameu qU, ...]\n  At index 0 diff: 57:namecIU:l_name82 jn8 != 52:Edit_first_name:l_name82  jn8\n  Right contains 22 more items, first extra item: 53:named 9rk An:l_nameg\n  Use -v to get the full diff",
+  "statusTrace" : "app = <fixture.application.Application object at 0x03CB9A78>, db = <fixture.db.DbFixture object at 0x03CB97D8>\n\n    def test_contact_db_info_matches_ui(app, db):\n        ui_list = app.contact.get_contact_list()\n    \n        def clean(contact):\n            return Contact(id=contact.id, first_name_contact=contact.first_name_contact,\n                           last_name_contact=contact.last_name_contact,\n                           address_contact=contact.address_contact,\n                           all_phones_from_home_page=merge_phones_like_on_home_page(contact),\n                           all_emails_from_home_page=merge_emails_like_on_home_page(contact))\n    \n        db_list = map(clean, db.get_contact_list())\n>       assert sorted(ui_list, key=Contact.id_or_max) == sorted(db_list, key=Contact.id_or_max)\nE       assert [57:namecIU:l_name82 jn8] == [52:Edit_firs...nameu qU, ...]\nE         At index 0 diff: 57:namecIU:l_name82 jn8 != 52:Edit_first_name:l_name82  jn8\nE         Right contains 22 more items, first extra item: 53:named 9rk An:l_nameg\nE         Use -v to get the full diff\n\ntest\\test_assert_contact.py:58: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "db",
+    "time" : {
+      "start" : 1600124601790,
+      "stop" : 1600124601798,
+      "duration" : 8
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "stop",
+    "time" : {
+      "start" : 1600124601790,
+      "stop" : 1600124601790,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "app",
+    "time" : {
+      "start" : 1600124659440,
+      "stop" : 1600124659442,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "db::fin",
+    "time" : {
+      "start" : 1600124672649,
+      "stop" : 1600124672649,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "stop::fin",
+    "time" : {
+      "start" : 1600124671832,
+      "stop" : 1600124672647,
+      "duration" : 815
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "test_assert_contact"
+  }, {
+    "name" : "host",
+    "value" : "verzhinskiy-nb"
+  }, {
+    "name" : "thread",
+    "value" : "102296-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test.test_assert_contact"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1a59aaa20b90d32c.json",
+  "parameterValues" : [ ]
+}
