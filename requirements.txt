@@ -4,5 +4,5 @@ selenium
 jsonpickle
 pymysql
 pony
-allure
 allure-pytest
+allure
