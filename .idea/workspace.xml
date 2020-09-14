@@ -5,7 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="" />
+    <list default="true" id="be4262ac-8225-4f77-b6ec-19c5a5d15c8e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +42,7 @@
       <recent name="E:\python\Python_training\models" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for bdd.group_scenarios.test_delete_group">
+  <component name="RunManager" selected="Python tests.pytest in test_remove_contact_from_group.py">
     <configuration default="true" type="tests" factoryName="Unittests" activateToolWindowBeforeRun="false">
       <module name="Python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,22 +90,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for group_scenarios.test_add_new_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="Python_training" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bdd" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;group_scenarios.test_add_new_group&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest in group_scenarios.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,6 +103,22 @@
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/bdd/group_scenarios.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Python_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -137,19 +139,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest in test_remove_contact_from_group.py" />
-      <item itemvalue="Python tests.pytest for group_scenarios.test_add_new_group" />
       <item itemvalue="Python tests.pytest for bdd.group_scenarios.test_add_new_group" />
       <item itemvalue="Python tests.pytest in group_scenarios.py" />
       <item itemvalue="Python tests.pytest for bdd.group_scenarios.test_delete_group" />
+      <item itemvalue="Python tests.pytest in test" />
+      <item itemvalue="Python tests.pytest in test_remove_contact_from_group.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for bdd.group_scenarios.test_delete_group" />
-        <item itemvalue="Python tests.pytest in group_scenarios.py" />
-        <item itemvalue="Python tests.pytest for bdd.group_scenarios.test_add_new_group" />
-        <item itemvalue="Python tests.pytest for group_scenarios.test_add_new_group" />
         <item itemvalue="Python tests.pytest in test_remove_contact_from_group.py" />
+        <item itemvalue="Python tests.pytest in test" />
+        <item itemvalue="Python tests.pytest in group_scenarios.py" />
+        <item itemvalue="Python tests.pytest for bdd.group_scenarios.test_delete_group" />
+        <item itemvalue="Python tests.pytest for bdd.group_scenarios.test_add_new_group" />
       </list>
     </recent_temporary>
   </component>
@@ -164,13 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594660431685</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Повышение читаемости кода. Рефакторинг кода в методы">
-      <created>1594671071907</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1594671071907</updated>
     </task>
     <task id="LOCAL-00004" summary="Передача парметров в методы.&#10;Добавлен второй тест с пустыми значениями для ввода.">
       <created>1594671172944</created>
@@ -508,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600037425126</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="requirements.txt">
+      <created>1600037629876</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1600037629876</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -607,12 +609,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="867" y="191" width="637" height="658" key="#xdebugger.XInspectDialog/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596476389200" />
-    <state x="540" y="3" key="CommitChangelistDialog2" timestamp="1600037424459">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2640" y="-343" key="CommitChangelistDialog2" timestamp="1600037629193">
+      <screen x="1920" y="-347" width="2560" height="1400" />
     </state>
     <state x="-1840" y="4" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@-2560.0.2560.1400" timestamp="1599315304503" />
     <state x="540" y="3" key="CommitChangelistDialog2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600037424459" />
-    <state x="2640" y="-343" key="CommitChangelistDialog2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1600037344308" />
+    <state x="2640" y="-343" key="CommitChangelistDialog2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1600037629193" />
     <state x="540" y="3" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599065876701" />
     <state x="540" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1598898467649" />
     <state x="69" y="68" width="1782" height="904" key="DiffContextDialog" timestamp="1598899165563">
@@ -626,43 +628,43 @@
     <state x="333" y="326" key="FileChooserDialogImpl/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600008364544" />
     <state x="2364" y="92" key="FileChooserDialogImpl/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1599582667132" />
     <state x="333" y="326" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598900785431" />
-    <state width="1899" height="386" key="GridCell.Tab.0.bottom" timestamp="1600036561521">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2539" height="297" key="GridCell.Tab.0.bottom" timestamp="1600041833840">
+      <screen x="1920" y="-347" width="2560" height="1400" />
     </state>
     <state width="2539" height="593" key="GridCell.Tab.0.bottom/-2560.0.2560.1400/0.0.2560.1400@-2560.0.2560.1400" timestamp="1599306483302" />
     <state width="2539" height="422" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@-2560.-347.2560.1400" timestamp="1599251904073" />
     <state width="1899" height="386" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600036561521" />
-    <state width="1899" height="127" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1599589748406" />
+    <state width="2539" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1600041833840" />
     <state width="1899" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599080484399" />
     <state width="1256" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596571371525" />
     <state width="1899" height="349" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598900319035" />
-    <state width="1899" height="386" key="GridCell.Tab.0.center" timestamp="1600036561520">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2539" height="297" key="GridCell.Tab.0.center" timestamp="1600041833839">
+      <screen x="1920" y="-347" width="2560" height="1400" />
     </state>
     <state width="2539" height="593" key="GridCell.Tab.0.center/-2560.0.2560.1400/0.0.2560.1400@-2560.0.2560.1400" timestamp="1599306483302" />
     <state width="2539" height="422" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@-2560.-347.2560.1400" timestamp="1599251904073" />
     <state width="1899" height="386" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600036561520" />
-    <state width="1899" height="127" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1599589748405" />
+    <state width="2539" height="297" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1600041833839" />
     <state width="1899" height="322" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599080484398" />
     <state width="1256" height="322" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596571371525" />
     <state width="1899" height="349" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598900319035" />
-    <state width="1899" height="386" key="GridCell.Tab.0.left" timestamp="1600036561520">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2539" height="297" key="GridCell.Tab.0.left" timestamp="1600041833839">
+      <screen x="1920" y="-347" width="2560" height="1400" />
     </state>
     <state width="2539" height="593" key="GridCell.Tab.0.left/-2560.0.2560.1400/0.0.2560.1400@-2560.0.2560.1400" timestamp="1599306483302" />
     <state width="2539" height="422" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@-2560.-347.2560.1400" timestamp="1599251904073" />
     <state width="1899" height="386" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600036561520" />
-    <state width="1899" height="127" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1599589748405" />
+    <state width="2539" height="297" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1600041833839" />
     <state width="1899" height="322" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599080484398" />
     <state width="1256" height="322" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596571371525" />
     <state width="1899" height="349" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598900319035" />
-    <state width="1899" height="386" key="GridCell.Tab.0.right" timestamp="1600036561520">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2539" height="297" key="GridCell.Tab.0.right" timestamp="1600041833839">
+      <screen x="1920" y="-347" width="2560" height="1400" />
     </state>
     <state width="2539" height="593" key="GridCell.Tab.0.right/-2560.0.2560.1400/0.0.2560.1400@-2560.0.2560.1400" timestamp="1599306483302" />
     <state width="2539" height="422" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@-2560.-347.2560.1400" timestamp="1599251904073" />
     <state width="1899" height="386" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600036561520" />
-    <state width="1899" height="127" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1599589748406" />
+    <state width="2539" height="297" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1600041833839" />
     <state width="1899" height="322" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1599080484399" />
     <state width="1256" height="322" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596571371525" />
     <state width="1899" height="349" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598900319035" />
@@ -702,18 +704,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="763" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597497214534" />
-    <state x="327" y="184" key="SettingsEditor" timestamp="1600037017269">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2356" y="-99" key="SettingsEditor" timestamp="1600040733924">
+      <screen x="1920" y="-347" width="2560" height="1400" />
     </state>
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600037017269" />
+    <state x="2356" y="-99" key="SettingsEditor/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1600040733924" />
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1595254393781" />
     <state x="327" y="184" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1598900982171" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1600037429295">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2656" y="-12" key="Vcs.Push.Dialog.v2" timestamp="1600037634288">
+      <screen x="1920" y="-347" width="2560" height="1400" />
     </state>
     <state x="-1824" y="335" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@-2560.0.2560.1400" timestamp="1599315311305" />
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600037429295" />
-    <state x="2656" y="-12" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1600037350889" />
+    <state x="2656" y="-12" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1600037634288" />
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1596570294769" />
     <state x="2656" y="335" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1596563093902" />
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598295561589" />
@@ -749,10 +752,11 @@
     </state>
     <state x="785" y="292" width="700" height="429" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.0.2560.1400@0.0.1920.1040" timestamp="1598981194666" />
     <state x="2794" y="0" width="1038" height="1063" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1594674108138" />
-    <state x="707" y="234" width="672" height="504" key="search.everywhere.popup" timestamp="1600008870808">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2863" y="-32" width="896" height="679" key="search.everywhere.popup" timestamp="1600040814606">
+      <screen x="1920" y="-347" width="2560" height="1400" />
     </state>
     <state x="707" y="234" width="672" height="504" key="search.everywhere.popup/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@0.0.1920.1040" timestamp="1600008870808" />
+    <state x="2863" y="-32" width="896" height="679" key="search.everywhere.popup/0.0.1920.1040/1920.-347.2560.1400/-2560.-347.2560.1400@1920.-347.2560.1400" timestamp="1600040814606" />
     <state x="2863" y="315" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.2560.1400@1920.0.2560.1400" timestamp="1595877169077" />
   </component>
   <component name="XDebuggerManager">
